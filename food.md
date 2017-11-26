@@ -16,6 +16,8 @@ Entrees
  
 [Instapot Teri's sausage and peppers][sausage and peppers]
 
+[Beef Brisket Pho][beef brisket pho]
+
 Side Dishes
 
 [Brussel Sprout][brussel sprout]
@@ -32,3 +34,4 @@ Side Dishes
 [brussel sprout]: https://www.arealfoodjourney.com/brussel-sprout-side-dish-instapot-recipe/
 [mexican meatloaf]: http://predominantlypaleo.com/paleo-instant-pot-mexi-meatloaf/
 [low carb cheesecake]: https://www.scatteredthoughtsofacraftymom.com/low-carb-sugar-free-crustless-cheesecake-in-the-pressure-cooker/
+[beef brisket pho]: https://iheartumami.com/paleo-beef-brisket-pho/
