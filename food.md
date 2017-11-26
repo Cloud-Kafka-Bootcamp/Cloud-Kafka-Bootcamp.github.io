@@ -4,9 +4,9 @@ title: "Favorite Recipes"
 permalink: /food/
 ---
 
-Favorite Instapot Recipes
+# Favorite Instapot Recipes
 
-Entrees
+## Entrees
 
 [Instapot Chili][chili]
 
@@ -18,7 +18,7 @@ Entrees
 
 [Beef Brisket Pho][beef brisket pho]
 
-Side Dishes
+## Side Dishes
 
 [Brussel Sprout][brussel sprout]
 
