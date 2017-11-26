@@ -93,8 +93,8 @@
         <entry file="file://$PROJECT_DIR$/food.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="225">
-                <caret line="15" column="64" lean-forward="false" selection-start-line="15" selection-start-column="64" selection-end-line="15" selection-end-column="64" />
+              <first_editor relative-caret-position="414">
+                <caret line="33" column="133" lean-forward="false" selection-start-line="33" selection-start-column="133" selection-end-line="33" selection-end-column="133" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -320,7 +320,7 @@
       <workItem from="1503870566816" duration="2017000" />
       <workItem from="1503879256369" duration="1051000" />
       <workItem from="1503880405616" duration="7351000" />
-      <workItem from="1511718751050" duration="1509000" />
+      <workItem from="1511718751050" duration="2612000" />
     </task>
     <task id="LOCAL-00001" summary="added chili">
       <created>1511720435890</created>
@@ -329,11 +329,18 @@
       <option name="project" value="LOCAL" />
       <updated>1511720435890</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added hard boiled eggs">
+      <created>1511720617160</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1511720617160</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13710000" />
+    <option name="totallyTimeSpent" value="14813000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="833" extended-state="0" />
@@ -368,7 +375,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added chili" />
-    <option name="LAST_COMMIT_MESSAGE" value="added chili" />
+    <MESSAGE value="added hard boiled eggs" />
+    <option name="LAST_COMMIT_MESSAGE" value="added hard boiled eggs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -790,8 +798,8 @@
     <entry file="file://$PROJECT_DIR$/food.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="225">
-            <caret line="15" column="64" lean-forward="false" selection-start-line="15" selection-start-column="64" selection-end-line="15" selection-end-column="64" />
+          <first_editor relative-caret-position="414">
+            <caret line="33" column="133" lean-forward="false" selection-start-line="33" selection-start-column="133" selection-end-line="33" selection-end-column="133" />
             <folding />
           </first_editor>
           <second_editor />
