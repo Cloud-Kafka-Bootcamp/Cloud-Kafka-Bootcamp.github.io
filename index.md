@@ -4,3 +4,6 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: home
 ---
+Welcome to the Cloud Kafka Bootcamp information page
+
+More information about the bootcamp will be available here

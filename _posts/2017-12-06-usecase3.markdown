@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Setting up your laptop for the Bootcamp"
-date:   2017-12-06 12:16:50 -0400
+title:  "Use Case 3 - Live Reports"
+date:   2017-12-06 12:16:20 -0400
 categories: jekyll update
 ---
 # This is the default page created by jekyll
