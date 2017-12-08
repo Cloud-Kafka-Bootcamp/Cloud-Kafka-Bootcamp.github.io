@@ -1,4 +1,4 @@
-# Cloud-Kafka-Bootcamp.github.io
-Cloud Kafka Bootcamp
+# Zeus-Cloud-Team.github.io
+Kafka Bootcamp
 
-https://Cloud-Kafka-Bootcamp.github.io
+https://Zeus-Cloud-Team.github.io
