@@ -1,4 +1,4 @@
-# Created by https://www.gitignore.io/api/maven,gradle,eclipse,netbeans,intellij,visualstudiocode,node,sass
+# Created by https://www.gitignore.io/api/maven,gradle,eclipse,netbeans,intellij,visualstudiocode,node,sass,macos,windows
 
 ### Eclipse ###
 
@@ -124,6 +124,33 @@ fabric.properties
 # Sonarlint plugin
 .idea/sonarlint
 
+### macOS ###
+*.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
 ### Maven ###
 target/
 pom.xml.tag
@@ -206,7 +233,6 @@ typings/
 # dotenv environment variables file
 .env
 
-
 ### Sass ###
 .sass-cache/
 *.css.map
@@ -218,6 +244,27 @@ typings/
 !.vscode/launch.json
 !.vscode/extensions.json
 .history
+
+### Windows ###
+# Windows thumbnail cache files
+Thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
 
 ### Gradle ###
 .gradle
@@ -235,8 +282,8 @@ gradle-app.setting
 # # Work around https://youtrack.jetbrains.com/issue/IDEA-116898
 # gradle/wrapper/gradle-wrapper.properties
 
+# End of https://www.gitignore.io/api/maven,gradle,eclipse,netbeans,intellij,visualstudiocode,node,sass,macos,windows
+
 #Extra
 _site
 .jekyll-metadata
-
-# End of https://www.gitignore.io/api/maven,gradle,eclipse,netbeans,intellij,visualstudiocode,node,sass
