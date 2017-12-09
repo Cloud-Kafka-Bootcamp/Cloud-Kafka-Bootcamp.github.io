@@ -23,7 +23,7 @@ github_username:  Cloud-Kafka-Bootcamp
 
 # Build settings
 markdown: kramdown
-theme: minima
+theme: jekyll-theme-architect
 plugins:
   - jekyll-feed
 
