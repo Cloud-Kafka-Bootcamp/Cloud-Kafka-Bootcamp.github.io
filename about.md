@@ -4,4 +4,4 @@ title: About
 permalink: /about/
 ---
 
-Cloud Kafka Bootcamp
+Zeus Cloud Team

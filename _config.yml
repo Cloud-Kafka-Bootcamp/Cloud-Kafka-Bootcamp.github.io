@@ -13,17 +13,17 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Cloud Kafka Bootcamp
+title: Zeus Cloud Team
 description: > # this means to ignore newlines until "baseurl:"
-  An exercise to implement 5 advanced event based use cases using Confluent Kafka
+  Zeuz Cloud Team space to try code out and share it with you!!
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username:
-github_username:  Cloud-Kafka-Bootcamp
+github_username:  Zeus-Cloud-Team
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-architect
+theme: minima
 plugins:
   - jekyll-feed
 
@@ -39,4 +39,4 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
-repository: Cloud-Kafka-Bootcamp/Cloud-Kafka-Bootcamp.github.io.git
+repository: Zeus-Cloud-Team/Zeus-Cloud-Team.github.io.git
