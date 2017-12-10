@@ -1,0 +1,44 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  {{ content }}
+
+  <h1 class="page-heading">Events</h1>
+  
+  <ul class="post-list">
+
+  {% assign grouped = site.docs | group_by: 'category' %}
+  {% for group in grouped %}
+      <li class="nav-item top-level {% if group.name == page.category %}current{% endif %}">
+          {% assign items = group.items | sort: 'order' %}
+          <a href="{{ site.baseurl }}{{ items.first.url }}">{{ group.name }}</a>
+          <ul>
+              {% for item in items %}
+                  <li class="nav-item {% if item.url == page.url %}current{% endif %}"><a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a></li>
+              {% endfor %}
+          </ul>
+      </li>
+  {% endfor %}
+  </ul>
+
+  <h1 class="page-heading">Posts</h1>
+  
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+        <span class="post-meta">{{ post.date | date: date_format }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+
+</div>

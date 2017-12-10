@@ -40,3 +40,30 @@ plugins:
 #   - vendor/ruby/
 
 repository: Zeus-Cloud-Team/Zeus-Cloud-Team.github.io.git
+
+collections:
+  docs:
+    title: Documentation
+    output: true
+    permalink: /:path/
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+  - scope:
+      path: ""
+      type: "docs"
+    values:
+      seo:
+        type: Article
+      _comments:
+        category: Group navigation links with this field
+        order: Used to sort links in the navigation
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      _comments:
+        type: Marks the impact of this release

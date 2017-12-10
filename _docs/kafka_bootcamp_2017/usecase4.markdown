@@ -1,8 +1,8 @@
 ---
-layout: post
+layout: page
 title:  "Use Case 4 - Event Orchestration / State machine"
-date:   2017-12-06 12:16:10 -0400
-categories: jekyll update
+category: Kafka Bootcamp 2017
+order: 4
 ---
 # This is the default page created by jekyll
 * * *

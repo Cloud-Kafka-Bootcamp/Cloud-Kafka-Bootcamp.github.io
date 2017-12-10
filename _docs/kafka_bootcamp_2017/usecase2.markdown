@@ -1,8 +1,8 @@
 ---
-layout: post
-title:  "Use Case 3 - Live Reports"
-date:   2017-12-06 12:16:20 -0400
-categories: jekyll update
+layout: page
+title:  "Use Case 2 - Business Rules"
+category: Kafka Bootcamp 2017
+order: 2
 ---
 # This is the default page created by jekyll
 * * *
