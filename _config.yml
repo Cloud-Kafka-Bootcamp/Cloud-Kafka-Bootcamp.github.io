@@ -42,8 +42,8 @@ plugins:
 repository: Zeus-Cloud-Team/Zeus-Cloud-Team.github.io.git
 
 collections:
-  docs:
-    title: Documentation
+  events:
+    title: Events
     output: true
     permalink: /:path/
 
@@ -54,7 +54,7 @@ defaults:
       layout: default
   - scope:
       path: ""
-      type: "docs"
+      type: "events"
     values:
       seo:
         type: Article
