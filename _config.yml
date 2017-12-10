@@ -45,7 +45,7 @@ collections:
   events:
     title: Events
     output: true
-    permalink: /:path/
+    permalink: /events/:path/
 
 defaults:
   - scope:
