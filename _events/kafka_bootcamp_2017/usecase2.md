@@ -1,8 +1,7 @@
 ---
-layout: page
-title:  "Use Case 4 - Event Orchestration / State machine"
+title:  "Use Case 2 - Business Rules"
 category: Kafka Bootcamp 2017
-order: 4
+order: 2
 ---
 # This is the default page created by jekyll
 * * *

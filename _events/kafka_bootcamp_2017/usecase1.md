@@ -1,8 +1,7 @@
 ---
-layout: page
-title:  "Use Case 2 - Business Rules"
+title: "Use Case 1 - CDC Event sourcing / Data Synchronization"
 category: Kafka Bootcamp 2017
-order: 2
+order: 1
 ---
 # This is the default page created by jekyll
 * * *

@@ -20,6 +20,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username:
 github_username:  Zeus-Cloud-Team
+show_full_navigation: true
 
 # Build settings
 markdown: kramdown
@@ -56,11 +57,13 @@ defaults:
       path: ""
       type: "events"
     values:
-      seo:
-        type: Article
       _comments:
         category: Group navigation links with this field
         order: Used to sort links in the navigation
+      _options:
+        content:
+          width: 800
+          height: 2000
   - scope:
       path: ""
       type: "posts"

@@ -1,8 +1,7 @@
 ---
-layout: page
-title: "Use Case 1 - CDC Event sourcing / Data Synchronization"
+title:  "Use Case 3 - Live Reports"
 category: Kafka Bootcamp 2017
-order: 1
+order: 3
 ---
 # This is the default page created by jekyll
 * * *
