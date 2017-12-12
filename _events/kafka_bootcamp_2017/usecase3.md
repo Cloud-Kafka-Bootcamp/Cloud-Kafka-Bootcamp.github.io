@@ -3,22 +3,23 @@ title:  "Use Case 3 - Live Reports"
 category: Kafka Bootcamp 2017
 order: 4
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+![Live Reports diagram](../pics/ca-kafka-live-reports.svg)
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+**When would I use this pattern?**
+A live report of the current data streams produced in real-time.
 
-Jekyll also offers powerful support for code snippets:
+**Materials provided:**
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+Same as scenario's 1 and 2
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+**Each team will need to develop the following**
+* appropriate schema and topics
+* appropriate producer(s)
+* Avro schema usage
+* consumer microservice joins the different streams of datasets
+  * consumer produces a report that shows transactions along with the first and last name of the customer making the transaction
+  * use kafka ktables and ksql to join customer and transactions
 
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+**Scenarios**
+* Stream enrichment - Join two streams of data that are flowing in
+* KSQL - this is using a new technology from Confluent, although you could achieve the result but using java and data structures, bonus points to you if you can achieve this using ktables and ksql

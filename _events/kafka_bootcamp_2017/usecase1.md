@@ -1,24 +1,30 @@
 ---
-title: "Use Case 1 - CDC Event sourcing / Data Synchronization"
+title: "Use Case 1 - Event Sourcing"
 category: Kafka Bootcamp 2017
 order: 2
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+![Event Sourcing Diagram](../pics/ca-kafka-event-sourcing.svg)
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+**When would I use this pattern?**
 
-Jekyll also offers powerful support for code snippets:
+A new microservice (or external data source) is released and needs to be synchronized with a system-of-record in real-time.
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+**Materials Provided:**
+* 3 Files with system-of-record (SOR) data (customer, city, transaction data)
+* Kafka
+* Kafka Schema Registry
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+**Each team will need to develop the following:**
+1. Avro schema defining each of the 3 files
+1. Topic(s) on Kafka to publish/consume the data to/from (Topic naming should follow this naming structure (Team)-(dataset), for example lojo-transactions and lojo-customers where 'lojo' is the team name and 'transactions' and 'customers' are the dataset name
+1. Event Producers microservices that read the system-of-record data (from files and publish to topic(s) on Kafka).  Use ccloud cli to create topics required (in order to simulate events, have the process sleep for a second or so in between pubishing each message)
+1. Consumer microservices that read the topics and consume the messages in real time and flush the results out to files.
+1. The consumer(s) and producer(s) use Avro format to send the data in, and the Avro schemas are being tracked with the schema registry
 
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+**This scenario is finished when**
+* Data from the 3 source files are being published via Avro and being captured and saved in 3 different files in real time (ie data is stored as its available rather than just at the end when all data is available)
+
+**Scenarios to consider**
+* Day-Zero Load - The microservice store must be initialized for the first time with a current state of the SOR store.
+* Real-time Updates - The microservice store must continuously updated with a current updates of the SOR store.
+* Bonus: Reconciliation - The SOR and microservice stores must be reconciled.
