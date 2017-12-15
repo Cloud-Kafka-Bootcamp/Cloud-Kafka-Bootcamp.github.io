@@ -3,7 +3,7 @@ title:  "Use Case 3 - Live Reports"
 category: Kafka Bootcamp 2017
 order: 4
 ---
-![Live Reports diagram](../pics/ca-kafka-live-reports.svg)
+![Live Reports diagram](../pics/ca-kafka-live-reports-2.svg)
 
 **When would I use this pattern?**
 A live report of the current data streams produced in real-time.
