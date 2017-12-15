@@ -3,7 +3,7 @@ title: "Use Case 1 - Event Sourcing"
 category: Kafka Bootcamp 2017
 order: 2
 ---
-![Event Sourcing Diagram](../pics/ca-kafka-event-sourcing.svg)
+![Event Sourcing Diagram](../pics/ca-kafka-event-sourcing-2.svg)
 
 **When would I use this pattern?**
 
