@@ -3,40 +3,52 @@ title: Welcome to Kafka Bootcamp
 category: Kafka Bootcamp 2017
 order: 1
 ---
-### Preparing for the bootcamp
+## Preparing for the bootcamp
 The bootcamp will start off with an introductory talk about Kafka which will describe the 4 scenarios included in the bootcamp and then launch into a session of hands on development.  People will be asked to form 4 - 6 person groups.  Groups can collaborate and work on the scenarios together.
 
-#### Environment
-The bootcamp will be done on your personal laptop, connecting to an instance of Confluent Cloud (Apache Kafka hosted on AWS).  There is starter code to get you going.  The starter code is a [starter producer](https://github.com/Zeus-Cloud-Team/kafka-producer-starter), [starter consumer](https://github.com/Zeus-Cloud-Team/kafka-consumer-starter) and [instructions to set up the Confluent Cloud CLI tool](https://github.com/Zeus-Cloud-Team/confluent-cloud-cli) for administering your topics on Confluent Cloud (called ccloud cli).
+### Environment
+The bootcamp will be done on your **_personal laptop_**, connecting to an instance of Confluent Cloud (Apache Kafka hosted on AWS).
 
-#### Preparing your laptop
-1. [Make sure your laptop has a JDK more recent than 1.8.0_101](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) , without at least this version you won't be able to connect to Confluent Cloud.  In addition to this version being installed it should also be the active java runtime for your maven (see step 3) and your IDE (see step 2)
+There are repos to get you going:
+
+* [Starter producer](https://github.com/Zeus-Cloud-Team/kafka-producer-starter)
+* [Starter consumer](https://github.com/Zeus-Cloud-Team/kafka-consumer-starter)
+* [Confluent Cloud Cli tool](https://github.com/Zeus-Cloud-Team/confluent-cloud-cli)
+
+### Preparing your personal laptop
+1. Make sure your laptop has a JDK more recent than [1.8.0_101](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html), without at least this version you won't be able to connect to Confluent Cloud. In addition to this version being installed it should also be the active java runtime for your maven (see step 3) and your IDE (see step 2)
 2. Your laptop should have your favorite IDE for java development (Intellij, Eclipse, Netbeans)
-3. Have command line maven [installed](https://maven.apache.org/download.cgi) and available for use on the command line.
-4. Alternatively, you could [install and run Kafka locally](https://www.confluent.io/download/) and use that during the bootcamp as long as you're not using windows, there's nothing special about Confluent Cloud Kafka that you can't get by running locally.
+3. Have [maven](https://maven.apache.org/download.cgi) installed and available for use on the command line.
 
-#### Setup Confluent Cloud
-1. Get connection details and credentials from the Cloud team (bootstrap servers list, schema registry server, api key(username), api secret(password)).  [Boostrap and registry servers](https://github.com/Zeus-Cloud-Team/kafka-bootcamp-instructions/blob/master/connection-info.yml).  API key and username will be provided during Hackathon or email the adoption team if you want to get started early.
-2. [Install ccloud](https://github.com/Zeus-Cloud-Team/confluent-cloud-cli), you'll need the information from step 1 to connect ccloud cli to the instance of Confluent Cloud we're using.  Once you connect familiarize yourself with administration of topics.
-3. You will have to follow these guidelines when using ccloud cli to administer Confluent Cloud Kafka
+> Optional: if you want, you could install and run [Kafka](https://www.confluent.io/download/) locally and use that during the bootcamp as long as you're not using windows, there's nothing special about Confluent Cloud Kafka that you can't get by running locally.
+
+### Setup Confluent Cloud
+1. Install [ccloud cli](https://github.com/Zeus-Cloud-Team/confluent-cloud-cli), you'll need the information from step 2 to connect ccloud cli to the instance of Confluent Cloud we're using.  Once you connect familiarize yourself with administration of topics.
+2. Confluent Cloud [connection details](../config/connection-info.yml)
+  * Bootstrap servers list: `r0.kafka.rbc-hackathon.aws.confluent.cloud:9092,r0.kafka.rbc-hackathon.aws.confluent.cloud:9093,r0.kafka.rbc-hackathon.aws.confluent.cloud:9094`
+  * Schema registry server: `http://ec2-35-182-31-180.ca-central-1.compute.amazonaws.com:8081`
+  * Api key(username): **Will be provided during the bootcamp on the #setup Slack channel**
+  * Api secret(password): **Will be provided during the bootcamp on the #setup Slack channel**
+3. Intialise ccloud using `ccloud init`
+4. You will have to follow these guidelines when using ccloud cli to administer Confluent Cloud Kafka
    * If part of a team select one person from the team and use that persons first name to prefix all topics you interact with
-   * NEVER modify a topic that you do not own, or are not working on as part of a team
-**NOTE** There is only 1 account, so all participants will have the ability to modify every other topic.  Like Uncle Ben said, with great power comes great responsibility.
+   * **NEVER modify a topic that you do not own, or are not working on as part of a team**
 
-#### Preparing your brain
+> There is only 1 account, so all participants will have the ability to modify every other topic.  Like Uncle Ben said, with great power comes great responsibility.
+
+### Preparing your brain
 This bootcamp is targeted for people who are familiar with Kafka.  Coming into this event you should be armed with knowledge.
 
 1. [Kafka - The Definitive Guide](https://www.confluent.io/wp-content/uploads/confluent-kafka-definitive-guide-complete.pdf)
 2. [You should know about Avro and schemas](https://www.confluent.io/blog/avro-kafka-data/)
 3. Reach out to the Cloud team to get more recommended reading material to prepare yourself
-4. [Download Kafka to run locally](https://www.confluent.io/download/) if you are on a non windows machine (don't try to run Kafka on windows), and try out the scenarios listed here.
+4. [Download Kafka to run locally](https://www.confluent.io/download/) and try out the scenarios listed here.
 5. Review the [bootcamp starter code](https://github.com/Zeus-Cloud-Team), clone it, build it, run it **but make sure you use your own topics to run it against**
 
-#### Is there any sample code I can start off with?
+### Is there any sample code I can start off with?
 1. Yes you can start off with the Kafka Bootcamp starter code
     * [Starter producer code](https://github.com/Zeus-Cloud-Team/kafka-producer-starter)
       * Contains the 3 data files in its /resources/data folder
-      * will connect to a on
     * [Starter consumer code](https://github.com/Zeus-Cloud-Team/kafka-consumer-starter)
 2. During the bootcamp talk to your team and agree on a naming prefix for your teams topics (ie lojo-topicnames where 'lojo' is the team name)
 3. Use ccloud cli to create the required topics
