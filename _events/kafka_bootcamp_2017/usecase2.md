@@ -3,7 +3,7 @@ title:  "Use Case 2 - Business Rules"
 category: Kafka Bootcamp 2017
 order: 3
 ---
-![Business Rules](../pics/ca-kafka-business-rules.svg)
+![Business Rules](../pics/ca-kafka-business-rules-2.svg)
 
 **When would I use this pattern?**
 
